@@ -12,15 +12,13 @@ Render the users card screens using this json file. The columnField object repre
 ## JSON parser
 Requirements for the JSON parser
 
-* Each JSON file corresponds to a route.
+* Each JSON file corresponds to a route. Any additional configuration file must be dynamically handled by the router.
 * Must be able to handle changes to values in JSON file(properties will be consistent, e.g. a new columnField might be added, but the matching data will(should) reflect it)
-* Must be written in angular 5+ in typescript
 * [mainview.json](JSON/config/mainview.json) is treated as the root(home) route for the whole app.
 
 
 ## Bonus
 
-* Dynamic routing - adding different new json files should be supported
 * Simple nodejs server to serve JSON files - seperate the json files from the app. visiting the route should request the json config corresponding to it then use that to build the screen
 * component separation - each type of config should be defined as a seperate component
 * service setup - setup services
