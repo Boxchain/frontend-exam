@@ -16,12 +16,12 @@ Requirements for the JSON parser
 * Must be able to handle changes to values in JSON file(properties will be consistent, e.g. a new columnField might be added, but the matching data will(should) reflect it)
 * [mainview.json](JSON/config/mainview.json) is treated as the root(home) route for the whole app.
 
-
-## Bonus
-
+## Additional requirements
 * Simple nodejs server to serve JSON files - seperate the json files from the app. visiting the route should request the json config corresponding to it then use that to build the screen
 * component separation - each type of config should be defined as a seperate component
 * service setup - setup services
+* Dynamic Router to handle dynamic names in json file, the end result for url should correspond the to configuration file you are using.
+* Must be able to handle additional configuration files that meets the specifications that is follow from the current examples.
 
 
 Good luck, have fun!!
